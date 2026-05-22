@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Aqua Water Score",
+    "slug": "aqua-water-score-fr",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0A1F44"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.aquapurify.waterscore",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Aqua Water Score utilise votre position pour identifier automatiquement votre commune et afficher les analyses d'eau correspondantes."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/adaptive-icon.png",
+        "backgroundColor": "#0A1F44"
+      },
+      "package": "com.aquapurify.waterscore",
+      "versionCode": 1,
+      "permissions": ["ACCESS_FINE_LOCATION", "ACCESS_COARSE_LOCATION"]
+    },
+    "web": {
+      "favicon": "./src/assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Aqua Water Score utilise votre position pour identifier votre commune."
+        }
+      ]
+    ],
+    "extra": {
+      "webhookUrl": null
+    }
+  }
+}
